@@ -2,7 +2,7 @@ from docx import Document
 
 
 def txt_to_word(input_file, output_file):
-    with open(input_file, 'r', encodind='utf-8') as txt_file:
+    with open(input_file, 'r', encoding='utf-8') as txt_file:
         text = txt_file.read()
     doc = Document()
     doc.add_paragraph(text)
